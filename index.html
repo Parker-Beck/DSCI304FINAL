@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>Final Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url("Images/title3.png");
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge w3-text-white">
+    Parker Beck, DSCI 304
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top w3-center">THROUGH THE PANDEMIC</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">
+      CHANGES IN COVID-19 TRANSMISSION AS THE PANDEMIC PROGRESSES
+    </p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+
+  </div>
+</div>
+
+<div>
+  <p class="center" style="width: 66%;text-align: center">
+    First, we'll take a look at the spread of Covid-19 throughout 2021. Below, I have included two visualizations, the left
+    shows the amount of cases in each county relative to population as time passes, while the right shows the amount of deaths
+    in each county relative to population as time passes. This format will continue throughout all visualizations, with
+    cases on the left and deaths on the right. As we can see, 2021 started really badly, with high numbers in both categories.
+    However, as time passed, more people got vaccinated, and even with the rise of the Delta variant, we were able to keep case
+    numbers down. However, as we get near the end of 2021, the case and death numbers get bad again, with most of the country
+    turning dark in July, August, and September.
+  </p>
+  <div>
+    <h1 class = left-center style="color: blueviolet;">
+      <b>
+        Deaths
+      </b>
+    </h1>
+    <h1 class = right-center style="color: deeppink;">
+      <b>
+        Cases
+      </b>
+    </h1>
+  </div>
+</div>
+
+<div>
+  <img src="Images/SpeedCasesCropped2.gif" style="width:49.5%;height:50%;alignment: left">
+  <img src="Images/LeftLegendCropped.gif" style="width:49.5%;height:50%;alignment:right">
+</div>
+
+<p class="center" style="width: 66%;text-align: center">
+  Next, we have two interactive plots. Both represent data from the past month, and just as before, the visualization on
+  the left shows cases while the one on the right shows deaths. If you mouse over counties, it will show you the county name
+  and the cases per 100,000 for that county. In addition, you can use the legend on the right to isolate counties by category.
+  The graph does not show us much more than the gif, but provides interesting county level data. We can check notable counties,
+  such as Harris county which has had about 0.01 deaths per 100,000 over the last month, or Travis County which has had a little
+  more than 5 cases per 100,000 over the last month.
+</p>
+
+
+<embed class = type="text/html" src="CasesSpelledCorrectly.html" style="width:49.5%;height:50%;alignment: left">
+<embed class = type="text/html" src="MonthlyDeathsInteractive.html" style="width:49.5%;height:50%;alignment: right">
+
+<p class="center" style="width: 66%;text-align: center">
+  These two maps show similar information to the last one, but cases are aggregated by state instead of county and shown
+  in a hex-grid. From this, we can see that the covid situation has been relatively bad in both Texas and the Midwest/West.
+  This is shown in both the cases and deaths visualizations, with darker colors in the heavily-affected areas. Overall, the
+  last few visualizations have shown that even though many people are vaccinated, and it seemed like we were doing well for
+  a while, we still need to stay vigilant and be cautious of the ongoing pandemic, as will be exemplified in the following
+  visuals.
+</p>
+
+<img src="Images/CasesHexSpelledRight.png" style="width:49.5%;height:35%;alignment: left">
+<img src="Images/LeftLengendDeathHex.png" style="width:49.5%;height:35%;alignment:right">
+
+<p class="center" style="width: 66%;text-align: center">
+  The next two graphs are the classic Covid-19 visualizations you always see, which just show cases and deaths over time.
+  Additionally, if you hover over a date, it will show you the exact date, the amount of cases/deaths recorded on said day,
+  and the 7-day running average of cases/deaths. The lines represent the 7-day running average, while the light grey bars
+  represent the amount of cases/deaths on that day. These line graphs show us that the pandemic is not over, even if we
+  may feel like it is, or want it to be. Numbers are still high, and even though the vaccines are really effective, there have
+  still been a lot of cases and deaths.
+</p>
+
+<embed class = type="text/html" src="CasesOverTime.html" style="width:49.5%;height:50%;alignment: left">
+<embed class = type="text/html" src="DailyDeaths.html" style="width:49.5%;height:50%;alignment: right">
+
+
+<p class="center" style="width: 66%;text-align: center">
+  The button below will take you to another page, which hosts a very similar graph except it is separated by state, with a
+  scroller to choose a state. I could not include it on this page because its file size is far too large. This graph just shows
+  that no state has been able to entirely avoid the pandemic, and thus we all must be wary.
+</p>
+
+<div style="text-align: center">
+  <a href="StateCases.html" class="button3">
+    Button
+  </a>
+</div>
+
+
+<p class="center" style="width: 66%;text-align: center">
+  Finally, we have two graphs that are less useful, but more fun. The first is a cartogram, a graph in which elements of a
+  map are distorted based on the size of another factor. In this case, the other factor is the amount of cases per 100,000 in each state.
+  Therefore, bigger states have more cases proportional to their population. The data is taken from the last month, and as we saw
+  in the hex-grid before, the Midwest and Texas seem to have the largest states/darkest colors. The second graph is just a simple
+  bar chart, which shows unchanged cases numbers for all states over the last month, and shows us that Michigan has had the most
+  cases over the last month.
+</p>
+
+<img src="Images/Cartogram.png" style="width:49.5%;height:65%;alignment: left">
+<img src="Images/StatesBar.png" style="width:49.5%;height:65%;alignment:right">
+
+
+
+</body>
+</html>
